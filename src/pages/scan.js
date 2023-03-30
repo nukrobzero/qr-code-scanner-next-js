@@ -42,10 +42,11 @@ export default function Scan() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col h-screen justify-center items-center">
-        <div className="flex flex-col">
+        <div className="flex flex-col justify-center items-center">
+          <h1 className="text-4xl font-bold mb-4">QR Scanner</h1>
           <div>
             <QrReader
-              className="h-[400px] w-[400px]"
+              className="lg:h-[400px] lg:w-[400px] h-[300px] w-[300px]"
               onResult={handleScan}
               constraints={{ facingMode: "environment" }}
               style={{ width: "40%", height: "40%" }}
